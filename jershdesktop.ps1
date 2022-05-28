@@ -1,14 +1,16 @@
+$title = "WinJersh Install Sctipt"
+$host.ui.RawUI.WindowTitle = $title
+
 Start-Process Powershell -Verb runAs
-Write-Output This Script us Automation on new Windows installs 
+Write-Output WinJersh Install Sctipt is used to create new accounts and Installing programs on my personal computers!
 Pause
  
+#Creating Accounts Config
 Write-Output Creating User Account
 Pause
-#Config 
-Set-Variable user= What is the Username?
-Set-Variable pwd= What is the Password?
-net user %user% %pwd% /add -and net user %user% /PasswordChg:Tes -and WMIC USERACCOUNT WHERE Name='%user%' SET PasswordExpires=FALSE
-Pause
+$Cred = Get-Credential -Message 'Enter username and password for new local account'
+New-LocalUser -Name $Cred.UserName -Password $Cred.Password -and 
 
+#Program Installs
 Write-Output Installing Applications. Please Be Patient. -and
-winget import --import-file "winstall-8073.json" -and
+winget import --import-file "winstall-8073.json" 
