@@ -11,4 +11,4 @@ net user %user% %pwd% /add -and net user %user% /PasswordChg:Tes -and WMIC USERA
 Pause
 
 Write-Output Installing Applications. Please Be Patient. -and
-winget import --import-file "winstall-8030.json" -and
+winget import --import-file "winstall-8073.json" -and
