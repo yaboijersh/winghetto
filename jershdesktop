@@ -1,0 +1,7 @@
+@echo This Script us Automation on new Windows installs 
+Start-Process Powershell -Verb runAs &&
+
+
+
+
+winget install --id=Mozilla.Firefox -e  && winget install --id=Valve.Steam -e  && winget install --id=Discord.Discord -e  && winget install --id=EpicGames.EpicGamesLauncher -e  && winget install --id=Nvidia.GeForceExperience -e  && winget install --id=Microsoft.WindowsTerminal -e  && winget install --id=CiderCollective.Cider -e  && winget install --id=Python.Python.3 -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Lexikos.AutoHotkey -e  && winget install --id=Bitwarden.Bitwarden -e  && winget install --id=qBittorrent.qBittorrent -e 
