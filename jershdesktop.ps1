@@ -16,3 +16,8 @@ New-LocalUser -Name $Cred.UserName -Password $Cred.Password
 Write-Output "Installing Applications. Please Be Patient." -and
 winget import --import-file "winstall-8073.json" 
 
+-and 
+
+Remove-LocalUser -Name "admin"
+logoff.exe
+
