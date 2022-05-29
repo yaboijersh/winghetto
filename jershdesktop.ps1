@@ -9,6 +9,7 @@ Write-Output "Creating User Account"
 Pause
 $Cred = Get-Credential -Message 'Enter username and password for new local account'
 New-LocalUser -Name $Cred.UserName -Password $Cred.Password 
+Add-LocalGroupMember -Group "Administrators" -Member "$Cred.UserName"
 
 -and 
 
