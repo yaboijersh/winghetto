@@ -21,6 +21,5 @@ winget import --import-file "winstall-8073.json"
 -and 
 
 Remove-LocalUser -Name "admin"
-logoff.exe
-
+shutdow.exe /r /t 00
 
