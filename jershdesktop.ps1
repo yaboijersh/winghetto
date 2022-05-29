@@ -16,10 +16,10 @@ Add-LocalGroupMember -Group "Administrators" -Member $Cred.UserName
 
 #Program Installs
 Write-Output "Installing Applications. Please Be Patient." -and
-winget import --import-file "winstall-8073.json" 
+winget import --import-file "winstall-6785.json"  
 
 -and 
 
 Remove-LocalUser -Name "admin"
-shutdow.exe /r /t 00
+shutdown.exe /r /t 00
 
