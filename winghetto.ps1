@@ -1,4 +1,4 @@
-$title = "WinJersh Install Sctipt"
+$title = " Winghetto Install Sctipt"
 $host.ui.RawUI.WindowTitle = $title
 
 Write-Output "WinJersh Install Sctipt is used to create new accounts and Installing programs on my personal computers!"
