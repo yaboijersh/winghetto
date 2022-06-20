@@ -11,3 +11,6 @@ With the installing of applications it does use winget. I was able to get the js
 
  Some apps may not installs correctly as they install on a user base and not a system base. I can't fix that but will do some research to see if I can fix it.
 another note  to add to this as well I just create an admin account on my install , this became a weird thing i did when setting up non-domained join computers at a job once. 
+
+
+### This script is made by Joshua Ross
